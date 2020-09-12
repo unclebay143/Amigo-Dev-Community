@@ -1,0 +1,35 @@
+/* Resetting */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50%;
+  background: white;
+}
+i.logo{
+  font-size: 25px;
+}
+.nav-link-wrapper{
+  padding: 23px;
+}
+.nav-bar a.nav-link{
+  text-decoration: none;
+  padding: 12px;
+  font-size: 18px;
+  color: rgba(0,0,0,0.65);
+}
+.nav-bar a.nav-link:hover{
+  border-bottom: 2px solid dodgerblue;
+  color: dodgerblue; /* or #1890ff */
+}
+
+  /* Section - 1 Stylng */
+.bay-rows{
+  min-height: 700px;
+  background-image: linear-gradient(255deg, #11bba1 50%,  #52c9de 40%)
+}
