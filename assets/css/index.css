@@ -82,6 +82,7 @@
 }
 .bay-row-2 button.btn:hover{
   border: 3px solid;
+  opacity: 0.8;
   background-image:linear-gradient(255deg,#11bba1 47%,#52c9de 40%);
   /* border-top: #52c9de; */
 }
@@ -117,9 +118,14 @@
   outline: none;
   background: #11bba1;
   cursor: pointer;
-  color: #fff;
   border-radius: 7px;
+
+}
+.btn-2 a{
+  text-decoration: none;
   font-weight: 700;
+  color: #fff;
+  padding: 15px
 }
 .btn-2:hover{
   opacity: 0.8;
