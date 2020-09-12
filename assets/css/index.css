@@ -7,38 +7,7 @@
 .container{
   overflow-y: hidden;
 }
-.nav-bar{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50%;
-  background: white;
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-}
-i.logo{
-  font-size: 25px;
-}
-.nav-link-wrapper{
-  padding: 23px;
-}
-.nav-bar a.nav-link{
-  text-decoration: none;
-  padding: 12px;
-  font-size: 18px;
-  color: rgba(0,0,0,0.65);
-}
-.nav-bar .join{
-  border-bottom: 3px solid dodgerblue;
-}
-.nav-bar a.nav-link:hover{
-  border-top: 2px solid dodgerblue;
-  color: dodgerblue; /* or #1890ff */
-}
-.nav-bar a.nav-link:hover{
-  border-bottom: none;
-}
+
 
   /* Section - 1 Styling */
 .bay-rows{
@@ -99,7 +68,7 @@ i.logo{
 .bay-row-2 button.btn{
   display: block;
   margin: 0 auto;
-  margin-left: 46%;
+  margin-left: 46.1%;
   padding: 12px;
   border-radius: 12px;
   border: none;
@@ -181,7 +150,7 @@ i.logo{
     bottom: 33px;
   }
   .bay-row-2 button.btn{
-    margin-left: 127px;
+    margin-left: 106px;
   }
   .bay-row-3{
     min-width: 350px;
