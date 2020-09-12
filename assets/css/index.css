@@ -91,10 +91,15 @@ i.logo{
 .bay-row-2{
   margin-top: 10%;
 }
+.bay-row-2 button.btn a{
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+}
 .bay-row-2 button.btn{
   display: block;
   margin: 0 auto;
-  margin-left: 47.8%;
+  margin-left: 46%;
   padding: 12px;
   border-radius: 12px;
   border: none;
@@ -104,6 +109,7 @@ i.logo{
   font-size: 18px;
   color: #fff;
   border: 3px solid;
+  font-weight: 700;
 }
 .bay-row-2 button.btn:hover{
   border: 3px solid;
@@ -130,6 +136,7 @@ i.logo{
   word-wrap: wrap;
   font-size: 1.5rem;
   color: rgb(119, 82, 82);
+  color: rgba(0, 0, 0, 0.7);
   font-weight: 700;
   word-break: break-all;
   margin-bottom: 12px;
@@ -143,6 +150,7 @@ i.logo{
   cursor: pointer;
   color: #fff;
   border-radius: 7px;
+  font-weight: 700;
 }
 .btn-2:hover{
   opacity: 0.8;
