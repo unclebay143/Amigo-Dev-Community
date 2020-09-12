@@ -4,12 +4,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+.container{
+  overflow-y: hidden;
+}
 .nav-bar{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 50%;
   background: white;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 i.logo{
   font-size: 25px;
@@ -23,34 +29,158 @@ i.logo{
   font-size: 18px;
   color: rgba(0,0,0,0.65);
 }
+.nav-bar .join{
+  border-bottom: 3px solid dodgerblue;
+}
 .nav-bar a.nav-link:hover{
-  border-bottom: 2px solid dodgerblue;
+  border-top: 2px solid dodgerblue;
   color: dodgerblue; /* or #1890ff */
 }
+.nav-bar a.nav-link:hover{
+  border-bottom: none;
+}
 
-  /* Section - 1 Stylng */
+  /* Section - 1 Styling */
 .bay-rows{
   min-height: 700px;
-  background-image: linear-gradient(255deg, #11bba1 50%,  #52c9de 40%)
+  width: 100vw;
+  background-image: linear-gradient(255deg, #11bba1 50%,  #52c9de 40%);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section 1 */
+
+.bay-row-1,
+.container{
+  background: rgba(0,0,0,0.1);
+}
+
+.bay-row-1{
+  min-height: 55.4vh;
+  background: rgba(0,0,0,0.1);
+}
+/* Video Styling */
+.bay-anime{
+  position: relative;
+  top: 120px;
+  display: flex;
+}
+.bay-anime video{
+  position: relative;
+  bottom: 52px;
+  margin-left: 300px;
+  overflow-y: hidden;
+}
+.bay-anime .bay-welcome-text{
+  width: 90%;
+  margin: 20px;
+  color: white;
+  white-space: nowrap;
+}
+.bay-anime .bay-welcome-text h3{
+  font-weight: 700;
+  font-size: 40px;
+}
+.bay-anime .bay-welcome-text p{
+  font-size: 19px;
+
+}
+
+/* Section - row - 2*/
+.bay-row-2{
+  margin-top: 10%;
+}
+.bay-row-2 button.btn{
+  display: block;
+  margin: 0 auto;
+  margin-left: 47.8%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-image:linear-gradient(255deg,  #52c9de 40%,#11bba1 50% );
+  font-size: 18px;
+  color: #fff;
+  border: 3px solid;
+}
+.bay-row-2 button.btn:hover{
+  border: 3px solid;
+  background-image:linear-gradient(255deg,#11bba1 47%,#52c9de 40%);
+  /* border-top: #52c9de; */
+}
+.bay-row-3{
+  height: 50vh;
+  color: rgba(0, 0, 0, 0.85);
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  background: rgba(248, 224, 224, 0.3);
+  padding: 23px;
+}
+.bay-row-3 h1{
+  padding: 2rem;
+  font-size: 2.5rem;
+}
+.bay-row-3 p{
+  font-size: 19px;
+  word-wrap: wrap;
+  font-size: 1.5rem;
+  color: rgb(119, 82, 82);
+  font-weight: 700;
+  word-break: break-all;
+  margin-bottom: 12px;
+}
+.btn-2{
+  padding: 15px;
+  margin-bottom: 12px;
+  border: none;
+  outline: none;
+  background: #11bba1;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 7px;
+}
+.btn-2:hover{
+  opacity: 0.8;
 }
 
 
 /* Mobile View */
 @media screen and (max-width:700px){
+  .container{
+    max-width: 480px;
+    margin: auto;
+  }
   .nav-bar{
-    margin: 30px;
-    background: red !important;
+    margin-top: 23px;
+    flex-direction: column;
+    position: static;
   }
-  .nav-bar .logo{
-    white-space: nowrap;
+  .bay-anime video{
+    display: none;
+  }
+  .bay-anime .bay-welcome-text{
+    white-space: pre-wrap;
     position: relative;
-    left: 10rem;
+    bottom: 100px;
   }
-  .nav-bar .nav-link-wrapper{
-    margin-right: 9rem;
-    display: flex;
-
+  .bay-anime .bay-welcome-text p{
+    position: relative;
+    bottom: 33px;
   }
-  .nav-bar .nav-link-wrapper .nav-link{
+  .bay-row-2 button.btn{
+    margin-left: 127px;
+  }
+  .bay-row-3{
+    min-width: 350px;
+    line-height: 2rem;
+    height: 60vh;
+  }
+  .bay-row-3 p{
+    font-size: 18px;
   }
 }
