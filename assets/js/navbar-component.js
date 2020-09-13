@@ -3,15 +3,14 @@ class Header extends HTMLElement {
         this.innerHTML = `
         <!-- Navbar Links Area -->
         <div class="nav-bar">
-            <i class="logo">
+            <a class="logo" href="../../index.html">
               Amigo Junior Dev
-            </i>
+            </a>
           <div class="nav-link-wrapper" id="nav-links">
             <a class="nav-link join" href="https://chat.whatsapp.com/GkIZkbVRgve5AqPVduYf2Q">Join Us</a>
             <a class="nav-link" href="">Members</a>
-            <a class="nav-link" href="">ReadME</a>
-  
-            </a>
+            <a class="nav-link" href="../contents/readme.html">ReadME</a>
+            <a class="last-link nav-link" href="../contents/weekly.html">Weekly</a>
           </div>
         </div>
       `;

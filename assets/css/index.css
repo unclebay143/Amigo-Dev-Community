@@ -20,32 +20,34 @@
 
 /* Section 1 */
 
-.bay-row-1,
-.container{
-  background: rgba(0,0,0,0.1);
-}
-
 .bay-row-1{
-  min-height: 55.4vh;
+  min-height: 100vh;
   background: rgba(0,0,0,0.1);
+  /* background: #7ED321; */
 }
 /* Video Styling */
 .bay-anime{
   position: relative;
   top: 120px;
   display: flex;
+  flex-direction: column-reverse;
 }
-.bay-anime video{
+/* .bay-anime video{
   position: relative;
   bottom: 52px;
   margin-left: 300px;
   overflow-y: hidden;
+} */
+.bay-anime img{
+  width: 70%;
+  margin: 0 auto;
 }
 .bay-anime .bay-welcome-text{
   width: 90%;
   margin: 20px;
   color: white;
   white-space: nowrap;
+  text-align: center;
 }
 .bay-anime .bay-welcome-text h3{
   font-weight: 700;
@@ -53,12 +55,12 @@
 }
 .bay-anime .bay-welcome-text p{
   font-size: 19px;
-
+  /* width: 300px; */
 }
 
 /* Section - row - 2*/
 .bay-row-2{
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .bay-row-2 button.btn a{
   text-decoration: none;
@@ -68,7 +70,7 @@
 .bay-row-2 button.btn{
   display: block;
   margin: 0 auto;
-  margin-left: 46.1%;
+  margin-left: 48.3%;
   padding: 12px;
   border-radius: 12px;
   border: none;
@@ -92,7 +94,7 @@
   text-align: center;
   width: 60%;
   margin: 0 auto;
-  margin-top: 23px;
+  margin-top: 50px;
   margin-bottom: 23px;
   background: rgba(248, 224, 224, 0.3);
   padding: 23px;
@@ -139,31 +141,52 @@
     margin: auto;
   }
   .nav-bar{
-    margin-top: 23px;
+    margin-top: 21px;
     flex-direction: column;
     position: static;
   }
-  .bay-anime video{
+  .bay-anime img{
+    width: 400px;
+    position: relative;
+    bottom: 50px;
     display: none;
   }
+  /* .bay-anime video{
+    display: none;
+  } */
   .bay-anime .bay-welcome-text{
     white-space: pre-wrap;
     position: relative;
-    bottom: 100px;
+    bottom: 150px;
+    width: 390px;
+    text-align: left;
+  }
+  .bay-anime .bay-welcome-text h3{
+    font-size: 1.8rem;
+    
   }
   .bay-anime .bay-welcome-text p{
     position: relative;
     bottom: 33px;
+    white-space: normal;
+    width: 300px;
+    padding: 5px;
   }
   .bay-row-2 button.btn{
-    margin-left: 106px;
+    margin-left: 45px;
+    position: relative;
+    bottom: 23rem;
   }
   .bay-row-3{
     min-width: 350px;
     line-height: 2rem;
-    height: 60vh;
+    /* height: 60vh; */
+    position: relative;
+    bottom: 19rem;
+    margin-bottom: -210px;
   }
   .bay-row-3 p{
     font-size: 18px;
   }
+
 }
