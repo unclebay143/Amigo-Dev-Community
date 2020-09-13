@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.weekly-container{
+  width: 800px;
+  padding: 22px;
+  margin: auto;
+  margin-top: 6rem;
+}
+
+@media screen and (max-width: 700px){
+  .weekly-container{
+    max-width: 480px;
+    margin-top: 0px;
+  }
+  .weekly-container h2{
+    font-size: 19px;
+  }
+  .week{
+    padding: 2px;
+    line-height: 2.4rem;
+  }
+  .week ol li{
+    font-size: 12px;
+    width: 300px;
+  }
+  .solution h5{
+    font-size: 13px;
+    width: 300px;
+  }
+  address{
+    font-weight: 700;
+  }
+}

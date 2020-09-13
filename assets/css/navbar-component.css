@@ -9,8 +9,13 @@
   z-index: 999;
   top: 0;
 }
-i.logo{
+a.logo{
   font-size: 25px;
+  cursor: pointer;
+  padding:9px;
+  text-decoration: none;
+  color: rgba(0,0,0,0.65);
+  font-weight: 700;
 }
 .nav-link-wrapper{
   padding: 23px;
@@ -40,5 +45,12 @@ i.logo{
     margin-top: 23px;
     flex-direction: column;
     position: static;
+    height: 180px;
+  }
+  .nav-bar a.last-link{
+    padding: 30px;
+    position: relative;
+    top: 27px;
+    left: 80px;
   }
 }
