@@ -9,7 +9,16 @@
   margin: auto;
   margin-top: 6rem;
 }
-
+.week{
+  padding: 2px;
+  line-height: 2.4rem;
+}
+.week h3{
+  margin-top: 12px;
+}
+address{
+  font-weight: 700;
+}
 @media screen and (max-width: 700px){
   .weekly-container{
     max-width: 480px;
