@@ -45,7 +45,7 @@ a.logo{
     margin-top: 23px;
     flex-direction: column;
     position: static;
-    height: 180px;
+    height: 100px;
   }
   .nav-bar a.last-link{
     padding: 30px;
