@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 50%;
   background: white;
   position: fixed;
   width: 100%;
@@ -16,14 +17,15 @@ a.logo{
   color: rgba(0,0,0,0.65);
   font-weight: 700;
 }
-
+.nav-link-wrapper{
+  padding: 23px;
+}
 .nav-bar a.nav-link{
   text-decoration: none;
-  margin: 12px;
+  padding: 12px;
   font-size: 18px;
   color: rgba(0,0,0,0.65);
 }
-
 .nav-bar .join{
   border-bottom: 3px solid dodgerblue;
 }
@@ -33,10 +35,6 @@ a.logo{
 }
 .nav-bar a.nav-link:hover{
   border-bottom: none;
-}
-
-.spacer {
-  flex: 1;
 }
 
 /* Mobile */
@@ -49,8 +47,10 @@ a.logo{
     position: static;
     height: 180px;
   }
-
-  .nav-bar a.nav-link {
-    font-size: 16px;
+  .nav-bar a.last-link{
+    padding: 30px;
+    position: relative;
+    top: 27px;
+    left: 80px;
   }
 }
