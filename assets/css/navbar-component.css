@@ -45,12 +45,10 @@ a.logo{
     margin-top: 23px;
     flex-direction: column;
     position: static;
-    height: 100px;
+   
+    gap: 20%;
+    margin-bottom: 2rem;
+
   }
-  .nav-bar a.last-link{
-    padding: 30px;
-    position: relative;
-    top: 27px;
-    left: 80px;
-  }
+  
 }
