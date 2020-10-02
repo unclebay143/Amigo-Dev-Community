@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.container{
+  overflow-y: hidden;
+}
 
 
   /* Section - 1 Styling */
@@ -56,7 +59,7 @@
 
 /* Section - row - 2*/
 .bay-row-2{
-  margin: 8% 0px;
+  margin: 5% 0px;
 }
 .bay-row-2 button.btn a{
   text-decoration: none;
@@ -171,7 +174,8 @@
   .bay-row-3{
     min-width: 350px;
     line-height: 2rem;
-    height: 100%;
+    /* height: 60vh; */
+    bottom: 19rem;
   }
   .bay-row-3 p{
     font-size: 18px;
