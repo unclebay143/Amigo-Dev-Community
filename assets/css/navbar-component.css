@@ -1,53 +1,54 @@
-.nav-bar{
+.nav-bar {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 50%;
   background: white;
+  box-shadow: 0 8px 6px -6px black;
   position: fixed;
   width: 100%;
   z-index: 999;
   top: 0;
 }
-a.logo{
+a.logo {
   font-size: 25px;
   cursor: pointer;
-  padding:9px;
+  padding: 9px;
   text-decoration: none;
-  color: rgba(0,0,0,0.65);
+  color: rgba(0, 0, 0, 0.65);
   font-weight: 700;
 }
-.nav-link-wrapper{
+.nav-link-wrapper {
   padding: 23px;
 }
-.nav-bar a.nav-link{
+.nav-bar a.nav-link {
   text-decoration: none;
   padding: 12px;
   font-size: 18px;
-  color: rgba(0,0,0,0.65);
+  color: rgba(0, 0, 0, 0.65);
 }
-.nav-bar .join{
+.nav-bar .join {
   border-bottom: 3px solid dodgerblue;
 }
-.nav-bar a.nav-link:hover{
+.nav-bar a.nav-link:hover {
   border-top: 2px solid dodgerblue;
   color: dodgerblue; /* or #1890ff */
 }
-.nav-bar a.nav-link:hover{
+.nav-bar a.nav-link:hover {
   border-bottom: none;
 }
 
 /* Mobile */
 
 /* Mobile View */
-@media screen and (max-width:700px){
-  .nav-bar{
+@media screen and (max-width: 700px) {
+  .nav-bar {
     margin-top: 23px;
     flex-direction: column;
     position: static;
     height: 100px;
   }
-  .nav-bar a.last-link{
+  .nav-bar a.last-link {
     padding: 30px;
     position: relative;
     top: 27px;
