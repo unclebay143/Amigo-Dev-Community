@@ -1,192 +1,106 @@
-/* Resetting */
 *{
-  margin: 0;
-  padding: 0;
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 }
-.container{
-  overflow-y: hidden;
+
+.navbar{
+  background-color: #ffffff;
+  box-shadow: 0 8px 6px -10px black;
+  z-index: 99;
 }
 
-
-  /* Section - 1 Styling */
-.bay-rows{
-  min-height: 700px;
-  width: 100vw;
-  background-image: linear-gradient(255deg, #11bba1 50%,  #52c9de 40%);
-  display: flex;
-  flex-direction: column;
-}
-
-/* Section 1 */
-
-.bay-row-1{
-  min-height: 100vh;
-  background: rgba(0,0,0,0.1);
-  /* background: #7ED321; */
-}
-/* Video Styling */
-.bay-anime{
-  position: relative;
-  top: 120px;
-  display: flex;
-  flex-direction: column-reverse;
-}
-/* .bay-anime video{
-  position: relative;
-  bottom: 52px;
-  margin-left: 300px;
-  overflow-y: hidden;
-} */
-.bay-anime img{
-  width: 70%;
-  margin: 0 auto;
-}
-.bay-anime .bay-welcome-text{
-  width: 90%;
-  margin: 20px;
-  color: white;
-  white-space: nowrap;
-  text-align: center;
-}
-.bay-anime .bay-welcome-text h3{
+.navbar .navbar-brand{
+  color: rgba(0, 0, 0, 0.65);
   font-weight: 700;
-  font-size: 40px;
-}
-.bay-anime .bay-welcome-text p{
-  font-size: 19px;
-  /* width: 300px; */
-}
-
-/* Section - row - 2*/
-.bay-row-2{
-  margin-top: 5%;
-}
-.bay-row-2 button.btn a{
-  text-decoration: none;
-  color: #fff;
-  padding: 20px;
-}
-.bay-row-2 button.btn{
-  display: block;
-  margin: 0 auto;
-  margin-left: 48.3%;
-  padding: 12px;
-  border-radius: 12px;
   border: none;
   outline: none;
-  cursor: pointer;
-  background-image:linear-gradient(255deg,  #52c9de 40%,#11bba1 50% );
-  font-size: 18px;
-  color: #fff;
-  border: 3px solid;
-  font-weight: 700;
+  font-size: 1.49rem;
 }
-.bay-row-2 button.btn:hover{
-  border: 3px solid;
-  opacity: 0.8;
-  background-image:linear-gradient(255deg,#11bba1 47%,#52c9de 40%);
-  /* border-top: #52c9de; */
+
+.navbar-toggler{
+  outline: none !important;
+  border: none !important;
 }
-.bay-row-3{
-  height: 50vh;
-  color: rgba(0, 0, 0, 0.85);
+
+.navbar-nav{
+  font-size: 1.0rem;
+  font:;
+}
+
+.sect {
+  /* display: none; */
+  margin-top: 4%;
   text-align: center;
-  width: 60%;
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 23px;
-  background: rgba(248, 224, 224, 0.3);
-  padding: 23px;
 }
-.bay-row-3 h1{
-  padding: 2rem;
-  font-size: 2.5rem;
+
+
+.sect img {
+  height: 250px;
+  width: 320px;
 }
-.bay-row-3 p{
-  font-size: 19px;
-  word-wrap: wrap;
+
+.sect-1 article h3{
+  margin: 0.9rem;
   font-size: 1.5rem;
-  color: rgb(119, 82, 82);
-  color: rgba(0, 0, 0, 0.7);
-  font-weight: 700;
-  word-break: break-all;
-  margin-bottom: 12px;
-}
-.btn-2{
-  padding: 15px;
-  margin-bottom: 12px;
-  border: none;
-  outline: none;
-  background: #11bba1;
-  cursor: pointer;
-  border-radius: 7px;
-
-}
-.btn-2 a{
-  text-decoration: none;
-  font-weight: 700;
-  color: #fff;
-  padding: 15px
-}
-.btn-2:hover{
-  opacity: 0.8;
+  color: #161c2d;
 }
 
+.sect-1 article p{
+  color: #869ab8;
+}
 
-/* Mobile View */
-@media screen and (max-width:700px){
-  .container{
-    max-width: 480px;
-    margin: auto;
+section.me{
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+img#me{
+  border: 3px solid rgb(31,172,122);
+  border-radius: 50%;
+  height: auto; 
+  width: 140px;
+   
+}
+section .text{
+  margin-top: 4%;
+  text-align: justify;
+  color: rgba(0,0,0,.9);
+  text-align: center
+};
+
+section .text .lead{
+}
+
+.the-team img{
+  border-radius: 50%;
+  height: auto;
+  width: 80px;
+}
+
+
+@media (min-width: 992px){
+  .navbar-brand{
+    margin-left: 100px;
   }
-  .nav-bar{
-    margin-top: 21px;
-    flex-direction: column;
-    position: static;
+  #navbar-nav .navbar-nav{
+    margin-left: auto;
+    margin-right: 100px;
   }
-  .bay-anime img{
-    width: 400px;
-    position: relative;
-    bottom: 50px;
-    display: none;
+
+  .sect-1 .carousel-item img {
+    height: 400px;
+    width: 550px;
   }
-  /* .bay-anime video{
-    display: none;
-  } */
-  .bay-anime .bay-welcome-text{
-    white-space: pre-wrap;
-    position: relative;
-    bottom: 150px;
-    width: 390px;
-    text-align: left;
+
+  .sect img{
+    /* margin-top: 4%; */
+    margin-bottom: 3%;
   }
-  .bay-anime .bay-welcome-text h3{
-    font-size: 1.8rem;
-    
+  .sect-1 article p{
+    font-size: 1.4rem;
   }
-  .bay-anime .bay-welcome-text p{
-    position: relative;
-    bottom: 33px;
-    white-space: normal;
-    width: 300px;
-    padding: 5px;
-  }
-  .bay-row-2 button.btn{
-    margin-left: 45px;
-    position: relative;
-    bottom: 23rem;
-  }
-  .bay-row-3{
-    min-width: 350px;
-    line-height: 2rem;
-    /* height: 60vh; */
-    position: relative;
-    bottom: 19rem;
-    margin-bottom: -210px;
-  }
-  .bay-row-3 p{
-    font-size: 18px;
-  }
+
 
 }
+
