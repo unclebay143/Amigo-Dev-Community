@@ -101,6 +101,11 @@ section .text .lead{
     font-size: 1.4rem;
   }
 
+  .the-team img{
+    border-radius: 50%;
+    height: auto;
+    width: 100px;
+  }
 
 }
 
