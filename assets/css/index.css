@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@800&display=swap');
 *{
   padding: 0px;
   margin: 0px;
@@ -47,11 +48,13 @@
 
 .sect-1 article p{
   color: #869ab8;
+  font-family: 'Turret Road';
 }
 
 section.me{
   margin-top: 4%;
   margin-bottom: 4%;
+  font-family: 'Turret Road';
 }
 
 img#me{
@@ -63,16 +66,30 @@ img#me{
 }
 section .text{
   margin-top: 4%;
+  margin-bottom: 4%;
+  font-size: 1.5rem;
   text-align: justify;
   color: rgba(0,0,0,.9);
-  text-align: center
+  text-align: center;
+  font-family: 'Turret Road';
 };
 
 section .text .lead{
 }
 
+.lead-text{
+  margin: 9% auto 4% auto;
+}
+
+.the-team{
+  font-family: 'Turret Road';
+  margin-bottom: 4%;
+  cursor: pointer;
+}
+
 .the-team img{
   border-radius: 50%;
+  border: 3px solid rgb(31,172,122);
   height: auto;
   width: 80px;
 }
@@ -94,7 +111,7 @@ section .text .lead{
 
   .sect img{
     /* margin-top: 4%; */
-    margin-bottom: 3%;
+    /* margin-bottom: %; */
   }
   .sect-1 article p{
     font-size: 1.4rem;
@@ -103,8 +120,41 @@ section .text .lead{
   .the-team img{
     border-radius: 50%;
     height: auto;
-    width: 100px;
+    width: 140px;
+  }
+
+  .prof-card{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+  }
+
+  .prof-card span{
+    position: relative;
+    top: 12px;
   }
 
 }
 
+
+@media (width: 320px){
+  .sect-1 article h3{
+    font-size: 1.6rem;
+  }
+  .sect-1 article p{
+    font-size: 1.8rem;
+  }
+  .prof-card img{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .prof-card span{
+    font-size: 1.9rem;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+}
